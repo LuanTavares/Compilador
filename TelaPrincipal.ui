@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TelaPrincipal</class>
+ <widget class="QMainWindow" name="TelaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>844</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>12</pointsize>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Compilador</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="labelCondigoFonte">
+    <property name="geometry">
+     <rect>
+      <x>341</x>
+      <y>53</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Código Fonte</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCodigoIntermediario">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>360</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Código Intermediário</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditCodigoFonte">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>80</y>
+      <width>770</width>
+      <height>280</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNovo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>12</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Novo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonAbrir">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>12</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Abrir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSalvar">
+    <property name="geometry">
+     <rect>
+      <x>355</x>
+      <y>14</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Salvar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCompilar">
+    <property name="geometry">
+     <rect>
+      <x>528</x>
+      <y>12</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Compilar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonLimpar">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>12</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limpar</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditCodigoIntermediario">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>380</y>
+      <width>770</width>
+      <height>200</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCodigoCompilado">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>580</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Código Compilado</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditCodigoCompilado">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>771</width>
+      <height>200</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
