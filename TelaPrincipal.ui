@@ -43,14 +43,14 @@
    <widget class="QLabel" name="labelCodigoIntermediario">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>320</x>
       <y>360</y>
       <width>181</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>Código Intermediário</string>
+     <string>Analise Lexica</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEditCodigoFonte">
@@ -154,7 +154,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Código Compilado</string>
+     <string>Analise Sintática</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEditCodigoCompilado">

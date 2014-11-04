@@ -37,7 +37,7 @@ TipoToken::TipoToken() {
     // Inicializa as expressões regulares
     regExpFlutuante = new QRegExp("([0-9])*(,)([0-9])*");
     regExpInteiro = new QRegExp("([0-9])*");
-    regExpAlfa = new QRegExp("'([A-za-z0-9])*'");
+    regExpAlfa = new QRegExp("'([A-za-z0-9 ])*'");
     regExpIdentificador = new QRegExp("([A-Za-z])([A-Za-z0-9])*");
 }
 
