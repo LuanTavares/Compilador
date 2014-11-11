@@ -15,6 +15,8 @@ TipoToken::TipoToken() {
     palavrasReservadas["OU"] = 10;
     palavrasReservadas["imprimir"] = 11;
     palavrasReservadas["programa"] = 12;
+    palavrasReservadas["importar"] = 13;
+    palavrasReservadas["Main"] = 14;
 
     simbolos["("] = 1;
     simbolos[")"] = 2;

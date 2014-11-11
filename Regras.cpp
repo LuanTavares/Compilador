@@ -2,7 +2,7 @@
 
 Regras::Regras() {
     // Regra para definição do programa
-    definicaoPrograma = new QRegExp("RESERVADO RESERVADO IDENTIFICADOR SIMBOLO SIMBOLO SIMBOLO ");
+    definicaoPrograma = new QRegExp("RESERVADO RESERVADO RESERVADO SIMBOLO SIMBOLO SIMBOLO ");
     // Regra para definição de variável
     definicaoVariavel = new QRegExp("RESERVADO RESERVADO IDENTIFICADOR SIMBOLO ");
     // Regra para definição de variável e atribuição
@@ -17,6 +17,7 @@ Regras::Regras() {
     condicaoInicio = new QRegExp("RESERVADO SIMBOLO (((INTEIRO|FLUTUANTE|IDENTIFICADOR|ALFA) OPLOGICO (INTEIRO|FLUTUANTE|IDENTIFICADOR|ALFA))( RESERVADO (INTEIRO|FLUTUANTE|IDENTIFICADOR|ALFA) OPLOGICO (INTEIRO|FLUTUANTE|IDENTIFICADOR|ALFA))*) SIMBOLO SIMBOLO ");
     condicaoMeio = new QRegExp("SIMBOLO RESERVADO SIMBOLO ");
     condicaoFim = new QRegExp("SIMBOLO ");
+    importacao = new QRegExp("RESERVADO ALFA SIMBOLO ");
 
     qtd = 0;
 
@@ -48,6 +49,8 @@ QList <QString> * Regras::validaLinha(QList<QString> * linhas) {
         } else if (condicaoFim->exactMatch(tokens)) {
             retorno->insert(i,"FIM ");
             qtd--;
+        } else if (importacao->exactMatch(tokens)) {
+            retorno->insert(i,"DIRETIVA ");
         } else {
             retorno->insert(i,"INDEFINIDO");
         }

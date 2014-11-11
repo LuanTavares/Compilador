@@ -12,6 +12,7 @@ private:
     QRegExp * definicaoVariavel;
     QRegExp * operacoesMatematicas;
     QRegExp * atribuicao;
+    QRegExp * importacao;
     QRegExp * definicaoEAtribuicao;
     QRegExp * concatenacaoDeString;
     QRegExp * condicaoInicio;

@@ -11,6 +11,7 @@ TelaPrincipal::TelaPrincipal(QWidget *parent) : QMainWindow(parent), ui(new Ui::
     connect(ui->pushButtonNovo,SIGNAL(clicked()), this, SLOT(novoArquivo()));
     connect(ui->pushButtonSalvar, SIGNAL(clicked()), this, SLOT(salvarArquivo()));
     connect(ui->pushButtonCompilar, SIGNAL(clicked()), this, SLOT(compilaCodigoFonte()));
+    connect(ui->pushButtonSobre, SIGNAL(clicked()), this, SLOT(sobre()));
 }
 
 TelaPrincipal::~TelaPrincipal() {
@@ -91,6 +92,12 @@ void TelaPrincipal::salvarArquivo() {
     } else {
         std::cout << "Não foi possível salvar o arquivo no diretório: "<< diretorio.toStdString() << std::endl;
     }
+}
+
+void TelaPrincipal::sobre() {
+    QMessageBox sobre;
+    sobre.setText("UNOESC - Universidade do Oeste de Santa Catarina \nAluno: Luan Tavares \nDisciplina: Compiladores \nProfessor: Cristiano Azevedo");
+    sobre.exec();
 }
 
 void TelaPrincipal::compilaCodigoFonte() {

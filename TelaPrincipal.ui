@@ -43,9 +43,9 @@
    <widget class="QLabel" name="labelCodigoIntermediario">
     <property name="geometry">
      <rect>
-      <x>342</x>
+      <x>335</x>
       <y>227</y>
-      <width>100</width>
+      <width>130</width>
       <height>20</height>
      </rect>
     </property>
@@ -82,7 +82,7 @@
    <widget class="QPushButton" name="pushButtonAbrir">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>144</x>
       <y>12</y>
       <width>93</width>
       <height>28</height>
@@ -95,8 +95,8 @@
    <widget class="QPushButton" name="pushButtonSalvar">
     <property name="geometry">
      <rect>
-      <x>355</x>
-      <y>14</y>
+      <x>288</x>
+      <y>13</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -108,8 +108,8 @@
    <widget class="QPushButton" name="pushButtonCompilar">
     <property name="geometry">
      <rect>
-      <x>528</x>
-      <y>12</y>
+      <x>413</x>
+      <y>13</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -121,9 +121,9 @@
    <widget class="QPushButton" name="pushButtonLimpar">
     <property name="geometry">
      <rect>
-      <x>690</x>
+      <x>548</x>
       <y>12</y>
-      <width>93</width>
+      <width>100</width>
       <height>28</height>
      </rect>
     </property>
@@ -147,9 +147,9 @@
    <widget class="QLabel" name="labelCodigoCompilado">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>329</x>
       <y>403</y>
-      <width>110</width>
+      <width>150</width>
       <height>20</height>
      </rect>
     </property>
@@ -168,6 +168,19 @@
       <width>770</width>
       <height>150</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSobre">
+    <property name="geometry">
+     <rect>
+      <x>683</x>
+      <y>13</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sobre</string>
     </property>
    </widget>
   </widget>

@@ -8,6 +8,7 @@
 #include <QList>
 #include <Token.h>
 #include <Regras.h>
+#include <QMessageBox>
 
 namespace Ui {
     class TelaPrincipal;
@@ -34,6 +35,7 @@ public slots:
     void novoArquivo();
     void salvarArquivo();
     void compilaCodigoFonte();
+    void sobre();
 };
 
 #endif // TELAPRINCIPAL_H
