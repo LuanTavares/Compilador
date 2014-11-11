@@ -7,6 +7,7 @@
 #include <iostream>
 #include <QList>
 #include <Token.h>
+#include <Regras.h>
 
 namespace Ui {
     class TelaPrincipal;
@@ -21,6 +22,7 @@ private:
     QFile * arquivo;
     QString conteudoDoArquivo;
     QList <Token *> tokens;
+    QList <QString> * linhas;
 
 public:
     explicit TelaPrincipal(QWidget *parent = 0);

@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>844</height>
+    <height>600</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
-    <height>600</height>
+    <width>0</width>
+    <height>0</height>
    </size>
   </property>
   <property name="font">
@@ -43,9 +43,9 @@
    <widget class="QLabel" name="labelCodigoIntermediario">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>360</y>
-      <width>181</width>
+      <x>342</x>
+      <y>227</y>
+      <width>100</width>
       <height>20</height>
      </rect>
     </property>
@@ -60,9 +60,9 @@
     <property name="geometry">
      <rect>
       <x>13</x>
-      <y>80</y>
+      <y>77</y>
       <width>770</width>
-      <height>280</height>
+      <height>150</height>
      </rect>
     </property>
    </widget>
@@ -138,18 +138,18 @@
     <property name="geometry">
      <rect>
       <x>13</x>
-      <y>380</y>
+      <y>250</y>
       <width>770</width>
-      <height>200</height>
+      <height>150</height>
      </rect>
     </property>
    </widget>
    <widget class="QLabel" name="labelCodigoCompilado">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>580</y>
-      <width>161</width>
+      <x>340</x>
+      <y>403</y>
+      <width>110</width>
       <height>20</height>
      </rect>
     </property>
@@ -163,10 +163,10 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>610</y>
-      <width>771</width>
-      <height>200</height>
+      <x>12</x>
+      <y>427</y>
+      <width>770</width>
+      <height>150</height>
      </rect>
     </property>
    </widget>

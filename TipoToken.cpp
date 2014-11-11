@@ -14,6 +14,7 @@ TipoToken::TipoToken() {
     palavrasReservadas["E"] = 9;
     palavrasReservadas["OU"] = 10;
     palavrasReservadas["imprimir"] = 11;
+    palavrasReservadas["programa"] = 12;
 
     simbolos["("] = 1;
     simbolos[")"] = 2;
@@ -51,6 +52,10 @@ QString TipoToken::identificaTipoDoToken(QString token) {
         _tipoDeToken = "OPLOGICO";
     } else if (operadoresMatematicos.contains(token)) {     // Verifica se o Token é um Operador Matemático
         _tipoDeToken = "OPMATEMATICO";
+    } else if ((token.contains("//")) && (token.lastIndexOf("//") == 0)) {  // Verifica se o Token é um Comentário de Linha
+        _tipoDeToken = "COMENTARIO";
+    } else if ((token.contains("/*")) && (token.contains("*/"))) {  // Verifica se o Token é um Comentário de multiplas linhas
+        _tipoDeToken = "COMENTARIO";
     } else if (regExpIdentificador->exactMatch(token)) {       // Se o Token não é nenhum dos anteriores então verifica se é um identificado válido
         _tipoDeToken = "IDENTIFICADOR";
     } else if (regExpAlfa->exactMatch(token)) {                // Verifica se o Token é um Alfa
@@ -63,6 +68,7 @@ QString TipoToken::identificaTipoDoToken(QString token) {
         _tipoDeToken = "NAO";
     }
     return _tipoDeToken;
+
 }
 
 QString TipoToken::getTipoDeToken() {

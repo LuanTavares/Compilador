@@ -6,10 +6,12 @@ FORMS += \
 HEADERS += \
     TelaPrincipal.h \
     Token.h \
-    TipoToken.h
+    TipoToken.h \
+    Regras.h
 
 SOURCES += \
     TelaPrincipal.cpp \
     Main.cpp \
     Token.cpp \
-    TipoToken.cpp
+    TipoToken.cpp \
+    Regras.cpp
